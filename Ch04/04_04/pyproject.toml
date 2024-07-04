@@ -1,0 +1,17 @@
+[project]
+name = 'outliers'
+version = '0.1.0'
+description = 'Outlier detection'
+readme = 'README.md'
+license = {file = 'LICENSE.txt'}
+requires-python = '>= 3.11'
+dependencies = [
+    'pandas ~= 2.2',
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ['outliers']

@@ -1,0 +1,6 @@
+---
+db:
+  host: db.local
+  port: 5432
+logging:
+  level: INFO

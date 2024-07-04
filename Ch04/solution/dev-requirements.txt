@@ -1,0 +1,7 @@
+# Development requirements
+
+# Include production requirements
+-r requirements.txt
+
+pytest ~= 8.2
+pytest-ruff ~= 0.3

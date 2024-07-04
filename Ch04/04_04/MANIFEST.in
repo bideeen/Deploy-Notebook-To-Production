@@ -1,0 +1,2 @@
+include dev-requirements.txt requirements.txt
+include outliers_test.py

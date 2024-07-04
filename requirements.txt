@@ -1,1 +1,13 @@
-# Specify Python package requirements for your project here (e.g., Mako==1.1.1). If your project doesn't require these, you can leave this file unchanged or delete it.
+duckdb ~= 0.10
+duckdb_engine ~= 0.12
+dynaconf ~= 3.2
+matplotlib ~= 3.9
+pandas ~= 2.2
+psycopg[binary] ~= 3.1
+pyarrow ~= 16.1
+pytest ~= 8.2
+pytest_benchmark ~= 4.0
+PyYAML ~= 6.0
+sqlalchemy ~= 2.0
+
+jupyter ~= 1.0 # For VSCode

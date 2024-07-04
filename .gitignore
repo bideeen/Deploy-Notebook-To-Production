@@ -1,4 +1,7 @@
+*.wal
 .DS_Store
-node_modules
 .tmp
+__pycache__
+archive.zip
+node_modules
 npm-debug.log

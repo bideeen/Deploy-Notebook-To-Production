@@ -1,0 +1,20 @@
+---
+
+- tags:
+    - ' '
+    - 'movie '
+    - 'HUMOR'
+  expected:
+    - 'movie'
+    - 'humor'
+
+- tags:
+    - 'movie'
+    - 'humor'
+  expected:
+    - 'movie'
+    - 'humor'
+
+- tags: []
+  expected: []
+  name: 'empty'
