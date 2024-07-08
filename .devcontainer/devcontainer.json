@@ -1,4 +1,12 @@
 {
+  "build": {
+	"dockerfile": "Dockerfile",
+	"context": "..",
+	"args": { 
+	  "VARIANT": "3.12",      // Set Python version here
+	  "NODE_VERSION": "lts/*"
+	}
+  },
   "extensions": [
     "GitHub.github-vscode-theme",
     "ms-toolsai.jupyter",
