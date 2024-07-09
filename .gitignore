@@ -1,6 +1,7 @@
 *.wal
 .DS_Store
 .tmp
+.venv
 __pycache__
 archive.zip
 node_modules
