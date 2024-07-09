@@ -27,4 +27,4 @@ jobs:
     - name: Test with pytest
       run: |
         cd Ch03/03_04
-        python -m pytest
+        python -m pytest -v
