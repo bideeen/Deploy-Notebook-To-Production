@@ -1,3 +1,4 @@
+build ~= 1.2
 duckdb ~= 0.10
 duckdb_engine ~= 0.12
 dynaconf ~= 3.2
