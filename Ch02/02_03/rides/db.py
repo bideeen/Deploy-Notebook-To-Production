@@ -22,9 +22,10 @@ FROM
 ;
 '''
 
+# ok
+
 
 def load_rides(db_file: str) -> pd.DataFrame:
     """Load rides loads rides from duckdb database."""
     conn = create_engine('duckdb:///' + db_file).connect()
     return pd.read_sql(query_sql, conn)
-
