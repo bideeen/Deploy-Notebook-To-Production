@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 from sqlalchemy import create_engine
 
+timeout_minutes = 10
+
 query_sql = '''
 SELECT
     r.trip_id,
@@ -26,8 +28,8 @@ FROM
 
 def load_rides(db_file: str) -> pd.DataFrame:
     """Load rides loads rides from duckdb database."""
-    conn = create_engine('duckdb:///' + db_file).connect()
-    return pd.read_sql(query_sql, conn)
+    with create_engine('duckdb:///' + db_file).connect() as conn:
+        return pd.read_sql(query_sql, conn)
 
 
 def clean_rides(df: pd.DataFrame) -> pd.DataFrame:
